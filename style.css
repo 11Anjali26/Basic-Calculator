@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:serif;
+}
+
+body{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#0a0a0a, #3a4452);
+}
+
+h1{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: fantasy;
+    color:#f8f8f9;
+}
+.calculator{
+    border: 10px solid #0c0c0d;
+    padding: 20px;
+    border-radius: 40px;
+    background: transparent;
+    box-shadow:0px 3px 15px 5px rgba(131, 132, 133, 0.5)
+}
+
+input{
+    width: 320px;
+    border-color:#049efdd7;
+    border-width: 5px;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 10px;
+    margin-bottom: 35px;
+    background: transparent;
+    font-size: 40px;
+    text-align: right;
+    cursor:pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color:#ffffff;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffffb2;
+    font-size: 23px;
+    border:2px solid;
+    cursor: pointer;
+}
+
+.btn{
+    color:#069a30;
+    font-size: 23px;
+}
+
+.operator{
+    color: #049efd;
+    font-size: 23px;
+}
+
+/* Media Queries */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* No changes needed as this is for large screens */
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (max-width: 1199.98px) {
+    .calculator {
+      padding: 15px;
+    }
+  
+    input {
+      width: 280px;
+      padding: 25px;
+      font-size: 35px;
+    }
+  
+    button {
+      width: 55px;
+      height: 55px;
+      margin: 8px;
+    }
+
+    .btn{
+        font-size:20px ;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 991.98px) {
+    h1 {
+      top: 30px;
+      left: 50px;
+      font-size: 22px;
+    }
+  
+    .calculator {
+      padding: 10px;
+      border-radius: 30px;
+    }
+  
+    input {
+      width: 240px;
+      padding: 20px;
+      font-size: 30px;
+    }
+  
+    button {
+      width: 50px;
+      height: 50px;
+      margin: 6px;
+      font-size: 20px;
+    }
+
+    
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (max-width: 767.98px) {
+    h1 {
+      top: 20px;
+      left: 40px;
+      font-size: 20px;
+    }
+  
+    .calculator {
+      padding: 5px;
+      border-radius: 20px;
+    }
+  
+    input {
+      width: 200px;
+      padding: 15px;
+      font-size: 25px;
+    }
+  
+    button {
+      width: 45px;
+      height: 45px;
+      margin: 5px;
+      font-size: 18px;
+    }
+    .btn{
+        font-size: 17px;
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    h1 {
+      top: 10px;
+      left: 30px;
+      font-size: 18px;
+    }
+  
+    .calculator {
+      padding: 5px;
+      border-radius: 15px;
+    }
+  
+    input {
+      width: 160px;
+      padding: 10px;
+      font-size: 20px;
+    }
+  
+    button {
+      width: 40px;
+      height: 40px;
+      margin: 4px;
+      font-size: 16px;
+    }
+  }
